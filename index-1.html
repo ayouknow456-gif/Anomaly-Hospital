@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏥 Anomaly Hospital - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background -->
+        <div class="background"></div>
+
+        <!-- Main Game Container -->
+        <div class="game-container">
+            <!-- Header -->
+            <div class="header">
+                <h1 class="title">🏥 ANOMALY HOSPITAL</h1>
+                <p class="subtitle">Welcome to Registration</p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Character -->
+                <div class="character-container">
+                    <div class="character">
+                        <div class="character-head">
+                            <div class="character-crown">👑</div>
+                            <div class="character-eyes">
+                                <span class="eye">●</span>
+                                <span class="eye">●</span>
+                            </div>
+                            <div class="character-mouth">_</div>
+                        </div>
+                        <div class="character-body">
+                            <div class="character-arms">
+                                <span class="arm left">✋</span>
+                                <span class="arm right">✋</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Display -->
+                <div class="message-box">
+                    <h2 id="stepTitle">Step 1: HOSPITAL SEAL</h2>
+                    <p id="stepMessage">Press SPACE BAR to stamp your seal</p>
+                </div>
+
+                <!-- Status Panel -->
+                <div class="status-panel">
+                    <div class="status-item">
+                        <span class="status-label">📝 Seal:</span>
+                        <span id="statusSeal" class="status-value">✗</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">📷 Photo:</span>
+                        <span id="statusPhoto" class="status-value">✗</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">🎫 Card:</span>
+                        <span id="statusCard" class="status-value">✗</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">🚪 Room:</span>
+                        <span id="statusRoom" class="status-value">-</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">💊 Item:</span>
+                        <span id="statusItem" class="status-value">-</span>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <p id="progressText">Step 1 of 6</p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p id="instruction">Press <strong>SPACE BAR</strong> to continue →</p>
+            </div>
+        </div>
+
+        <!-- Hidden elements for animation effects -->
+        <div id="effectContainer" class="effect-container"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
